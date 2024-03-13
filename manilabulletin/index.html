@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manila Bulletin</title>
+    <meta name="viewport" content="width=device-width">
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: right; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 1px;
+  background-color: black;
+  padding: 5px;
+}
+
+.grid-container > div {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 90px;
+  font-size: 19px;
+}
+.subhead {
+    font-size: 15px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+.topnav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: royalblue;
+}
+
+.topnav a.active {
+  background-color: whitesmoke;
+  color: royalblue;
+}
+
+.weatherforecastbox {
+    font-size: 16px;
+}
+
+.Capricorn {
+    font-size: 18px;
+}
+
+.oatmeal {
+    font-size: 14px;
+}
+
+.eatingwell {
+    color: darkgray;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+} 
+
+</style>
+</head>
+
+<body>
+<div class="grid-container">
+  <div class="item1">
+    <img class="manila" src="manila.png" height="100" width="350">
+    
+    <br><br><br>
+    
+    <div class="topnav">
+        <a class="active" href="#news"><b>News</b></a>
+        <a href="#business"><b>Business</b></a>
+        <a href="#opinion"><b>Opinion</b></a>
+        <a href="#entertainment"><b>Entertainment</b></a>
+        <a href="#sports"><b>Sports</b></a>
+        <a href="technology"><b>Technology</b></a>
+        <a href="#lifestyle"><b>Lifestyle</b></a>
+        <a href="#Essentials"><b>Essentials</b></a>
+      </div>
+  </div>
+  <div class="item2">
+    <h2><b>Human Rights violations under Duterte instant reminders of Martial Law years - solons</b></h2>
+        <br><br>
+    Lorem ipsum dolor sit amet, legere consetetur reformidans ex pro, utamur efficiantur ei vim. Cum ne possim melius mediocrem, et quo prima instructior, ad eum vocibus vulputate. Admodum blandit ea per, id fabellas percipitur intellegam sed, pro graecis comprehensam at. Vim ea aliquid placerat reformidans.
+In epicurei gloriatur has. Rebum petentium moderatius id vel. Ne vocibus repudiare pro, ne adhuc virtute oporteat vim, dolor dicam mea ex. Quodsi sanctus his te, debitis pertinax et eos.
+Et duo suas liber reformidans. Eirmod iudicabit eam ad, eu usu nemore scaevola phaedrum. At vis legendos deseruisse, his aliquip verterem ex. Eam an nulla nostrud accommodare, id case tamquam vix, homero lucilius posidonium no ius.
+Te pro nisl quando constituam, vis ex elit vocibus insolens. Sit malis iuvaret sanctus an. At usu solum elaboraret conclusionemque, justo ubique erroribus in eam. Modus putant et has. Prompta aliquid an qui, cu summo ignota delicatissimi sed, ex dicit volumus dolores per.
+Cu albucius concludaturque duo. In his meis feugait, eam explicari suscipiantur ut. Vel cu doctus definiebas reprimique. Qui vero illud interpretaris te, persius officiis lucilius pri ea.
+  </div>
+  <div class="item3">
+    <div class="weatherforecastbox"><span style="font-style: italic;">Weather forecast for the next 24 hours: Plenty of Sunshine &#9728;</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span>
+        <br><br>
+        <span><b>Capricorn Daily Horroscope</b></span></div>
+        <br>
+        <p class="Capricorn">Dear Capricorn, the Moon enters Pisces; today will be a wonderful day for you. A boost in
+        your income is predicted by Astroyogi astronomers, who say that money will come from the
+        most unexpected places. You'll be rewarded for your hard work and may get a raise or a bonus at work.
+        Either way, it's a beautiful thing. Schedule all significant work for completion between 4 PM  and 5 PM
+        to get the best outcomes. Today is your lucky dayif you wear yellow.</p>
+    </div>
+  <div class="item4">
+    <a href="https://www.eatingwell.com/article/7996442/what-happens-to-your-body-when-you-eat-oatmeal-every-day/#:~:text=The%20Bottom%20Line,you%20feeling%20fuller%20for%20longer.">
+    <img class="oatmeal" src="oatmeal.jpg" height="200" width="300">
+    <h2 class="oatmeal"><b>What Happens to Your Body When You Eat Oatmeal Every Day</b></h2>
+    <p class="eatingwell">Eating Well | Sponsored</p>
+  </a>
+    <br><br>
+
+    <span>By Ben Rosario</span><span>&nbsp;© 2023 Manila Bulletin The Nation's Leading Newspaper. All Rights Reserved.</span>
+  </div>
+</div>
+
+</body>
+</html>
+
+
