@@ -42,6 +42,14 @@ header {
     margin-top: 300px;
 }
 
+.navlist {
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    right: 14px;
+}
+
 nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
