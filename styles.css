@@ -114,7 +114,7 @@ nav ul li {
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  display: flex;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
