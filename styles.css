@@ -105,6 +105,11 @@ nav ul li {
   margin: 20px;
 }
 
+.container mt-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .card-mb-4 .card-img-top {
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
