@@ -37,13 +37,13 @@ header {
 .center-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     margin-top: 300px;
 }
 
 .navlist {
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     text-align: center;
     top: 5px;
