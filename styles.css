@@ -126,6 +126,11 @@ nav ul li {
   align-items: center;
 }
 
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+}
+
 .card-img-top:hover {
   opacity: .5;
 }
