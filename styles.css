@@ -196,6 +196,12 @@ footer {
     color: white;
 }
 
+  div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
   div.gallery {
     border: 1px solid #ccc;
   }
