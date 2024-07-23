@@ -132,13 +132,6 @@ nav ul li {
   opacity: .5;
 }
 
- img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%)translateY(-50%); /* top: and left: set the top left corner of the element. This emulates setting the center */
-}
-
 .desc {
   color: white;
 }
