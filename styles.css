@@ -126,7 +126,7 @@ nav ul li {
   align-items: center;
 }
 
-.card {
+.card mb-4 {
         margin: 0 auto; /* Added */
         float: none; /* Added */
 }
