@@ -94,12 +94,16 @@ nav ul li {
   max-width: 800px;
 }
 
-.container mt-4 {
+.container {
   margin-top: 4rem; /* Using rem instead of px for scalability */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards horizontally */
 }
 
 .card {
-  margin-bottom: 1.5rem;
+  margin: 1rem; /* Adjust spacing around cards */
+  max-width: 300px; /* Optional: limit card width for better appearance */
 }
 
 .card-img-top {
@@ -162,14 +166,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .card-columns {
-        column-count: 1;
+    .container {
+        flex-direction: column;
+        align-items: center; /* Center items vertically in column layout */
     }
 }
 
 @media (max-width: 576px) {
     .card {
-        margin-bottom: 1rem;
+        margin: 0.5rem; /* Reduce margin on smaller screens */
     }
 }
-
