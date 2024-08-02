@@ -94,7 +94,7 @@ nav ul li {
   max-width: 800px;
 }
 
-.container {
+.container mt-4 {
   margin-top: 4rem; /* Using rem instead of px for scalability */
 }
 
