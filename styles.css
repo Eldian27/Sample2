@@ -63,31 +63,24 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
-    
 }
 
-.h1 {
+.h1, .h2 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.7;
-  font-size: 26px;
   text-align: center;
-  justify-content: space-between;
   padding: 10px;
   color: white;
   border-color: white;
   border-style: hidden;
 }
 
+.h1 {
+  font-size: 26px;
+}
+
 .h2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  line-height: 1.7;
   font-size: 24px;
-  text-align: center;
-  justify-content: space-between;
-  padding: 10px;
-  color: white;
-  border-color: white;
-  border-style: hidden;   
 }
 
 .intro {
@@ -95,45 +88,27 @@ nav ul li {
   line-height: 1.7;
   font-size: 16px;
   text-align: center;
-  justify-content: space-between;
-  padding: 10px;
-  color: white;
-  border-color: white;
-  border-style: hidden;
-  border: 15px;
   padding: 50px;
-  margin: 20px;
-}
-
-.container mt-4 {
-  width: auto;
-  position: absolute; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-.card-mb-4 .card-img-top {
-  opacity: 1;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  display: block;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto; /* Added */
-  float: none;
-}
-
-.card-img-top:hover {
-  opacity: .5;
-}
-
-.desc {
   color: white;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.container {
+  margin-top: 4rem; /* Using rem instead of px for scalability */
+}
+
+.card {
+  margin-bottom: 1.5rem;
+}
+
+.card-img-top {
+  width: 100%; /* Ensure the image covers the full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card-body {
+  padding: 1rem;
 }
 
 footer {
@@ -151,17 +126,7 @@ footer {
     margin: 0 10px;
 }
 
-.gmail {
-  height: 30px;
-  width: 30px;
-}
-
-.instagram {
-  height: 30px;
-  width: 30px;
-}
-
-.facebook {
+.gmail, .instagram, .facebook {
   height: 30px;
   width: 30px;
 }
@@ -188,61 +153,23 @@ footer {
     color: white;
 }
 
-.p1 {
+.p1, .quote {
     color: white;
 }
 
-.quote {
-    color: white;
-}
-
-  div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  * {
+* {
     box-sizing: border-box;
-  }
-  
-  .responsive {
-    margin-top: 50px;
-    height: 300px;
-    padding: 0 6px;
-    float: left;
-    width: 20%;
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+}
 
+@media (max-width: 768px) {
+    .card-columns {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+}
 
